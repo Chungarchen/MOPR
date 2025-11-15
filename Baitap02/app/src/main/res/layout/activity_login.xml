@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5EE">
+
+    <ImageView
+        android:id="@+id/imgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="398dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/top_background1" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--  Tieu de-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="Welcome\nBack"
+            android:textColor="#E25D2C"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <!--  Email-->
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/email"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:hint="Email"
+                android:layout_marginLeft="12dp"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="#BBBBBB"/>
+
+        <!--        Password-->
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/password"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_marginLeft="12dp"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="#BBBBBB" />
+
+        <!--        Nut login-->
+        <ImageButton
+            android:id="@+id/btnLogin"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="right"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_arraw1"
+            android:scaleType="centerInside"
+            android:layout_width="65dp"
+            android:layout_height="65dp"/>
+
+        <!--        Nut login mxh-->
+        <LinearLayout
+            android:layout_width="363dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!--    Facebook-->
+            <LinearLayout
+                android:id="@+id/btnFacebook"
+                android:layout_width="156dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_social"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Facebook"
+                    android:textColor="#244C7A"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/facebook" />
+            </LinearLayout>
+
+            <!--  Google-->
+            <LinearLayout
+                android:id="@+id/btnGoogle"
+                android:layout_width="156dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_social"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Google"
+                    android:textColor="#244C7A"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/google" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:text="Are you new user? Register"
+        android:textColor="#244C7A"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
